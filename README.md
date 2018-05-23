@@ -17,3 +17,15 @@ Aplikacjie można wystartować poleceniem: <br/>
 Aplikacjia do działania nie potrzebuje zewnetrznego serwera aplikacyjnego (serwer wbudowany jest w projekt).<br/>
 Aplikacjia domyślnie uruchamia się na porcie 8080,
 aby zmienic port nalerzy wpisać wartość portu w pliku application.properties
+
+### Użytkowanie aplikacji
+
+Aby skorzystać z aplikacji nalerzy wysłać rządanie POST pod adres .../exchange/.
+Zapytanie powinno mieć nastepującą forme:
+```
+{
+  "value": "1000",
+  "currency": "PLN",
+  "targerCurrency": "USD"
+}
+```
